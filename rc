@@ -1,0 +1,6 @@
+
+. esienv/bin/activate
+
+export OS_CLOUD=openstack
+#ironicclient.common.apiclient.exceptions.UnsupportedVersion: No API version was specified or the requested operation was not
+export OS_BAREMETAL_API_VERSION=1.72
