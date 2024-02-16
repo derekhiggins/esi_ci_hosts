@@ -1,0 +1,18 @@
+
+## Some handy command
+# Ironic command
+baremetal node list
+
+# Reset a node, you'll want to do this if a cir wasn't cleanly deleted
+baremetal node set --extra ofcir_cir= <nodeuuid>
+
+# Network commands
+openstack network list
+openstack subnet list
+openstack port list
+openstack floating ip port forwarding list 128.31.20.106
+
+# Lease / Offer commands
+openstack esi offer list
+openstack esi offer claim <offerid>
+
