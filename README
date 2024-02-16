@@ -1,5 +1,17 @@
 
-## Some handy command
+
+## Setting up your env
+bash ./setup.sh
+. rc
+# Add your clouds.yaml to $PWD, then you can talk to ESI
+baremetal node list
+
+## Setting up the ESI networking infrastructure
+# This sets up openstack networks, ports, floating ips, and node metadata required by ofcir
+python infra_setup.py
+
+
+## Some handy commands
 # Ironic command
 baremetal node list
 
