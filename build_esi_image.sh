@@ -7,7 +7,7 @@ IMAGE_FILE="$IMG.qcow2"
 
 # Make sure to use a version of DIB with
 # https://github.com/openstack/diskimage-builder/commit/c03e46d9e1244d6ee2ac85ff119fed54b7e08c0e
-DIB_RELEASE=9-stream disk-image-create centos vm dhcp-all-interfaces -o $IMG -p linux-firmware
+DIB_RELEASE=9-stream disk-image-create centos vm -o $IMG -p linux-firmware
 
 # Remove existing images
 openstack image delete $IMG || true
